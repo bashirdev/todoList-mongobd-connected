@@ -1,0 +1,53 @@
+<%- include('partials/header'); %>
+
+
+
+
+<div class="box">
+
+<h1> <%= dateToday %> </h1>
+
+
+
+</div>
+<div class="box">
+
+  <h1> <%= todoTitle %> </h1>
+  
+ </div>
+
+ <div class="friendsimg">
+  <a href="/bashir" ><img  class="our-imgs" src="../img/bashir.jpg"  alt="Bashir"></a>
+  <a href="/saifur" ><img class="our-imgs" src="../img/saifur-min.jpg" alt="Saifur" ></a>
+  <a href="/hellal" ><img  class="our-imgs" src="../img/hellal-min.jpg" alt="Hellal"></a>
+  <a href="/mamun" ><img  class="our-imgs" src="../img/mamun-min.jpg" alt="Mamun"></a>
+  <a href="/anowar" ><img  class="our-imgs" src="../img/anowar-min.jpg" alt="Anowar"></a>
+ </div>
+ <div class="friendsimg"></div>
+ <div class="friendsimg"></div>
+ <div class="friendsimg"></div>
+
+
+<div class="box">
+
+  <% myList.forEach(function(list){ %>
+    <form action="/delete" method="POST">
+    <div class="item">
+  <input  type="checkbox" name='checkBox' value="<%= list._id %>" onChange="this.form.submit()">
+      <p> <%= list.name %> </p>
+    </div>
+    <input type="hidden" name="hiddenInputName" value="<%= todoTitle %>"></input> 
+  </form>
+    <%  });%>
+
+ 
+ 
+
+
+<form  action="/" method="POST">
+  <input class="form-input" placeholder="New Item" type="text" name="newItems" autocomplete="off">
+
+  <button type="submit" class="btn" name="list" value=<%= todoTitle %> ><span>+</span></button>
+</form>
+</div>
+<%- include('partials/footer'); %>

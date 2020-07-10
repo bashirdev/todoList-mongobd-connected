@@ -1,0 +1,390 @@
+body{
+
+  background-color: goldenrod;
+  background-image: linear-gradient(45deg,goldenrod 50%, #4f6eeb 50%);
+  min-height:1000px;
+ 
+
+
+}
+
+.nav-custom-bg{
+    background-color: #A84D4D;
+    color: honeydew;
+}
+.navbar-light{
+    padding: 10px;
+}
+
+.navbar-light a {
+    color: ivory !important;
+    padding:0px 25px;
+    transition: all 0.3s ease;
+
+}
+
+.navbar-light a:hover{
+    color: #DAA520 !important;
+}
+
+
+.nav-item {
+background-color: #4820da;
+border-radius: 5px;
+padding: 10px;
+margin:  5px;
+color: honeydew;
+transition: all .3s ease-in-out;
+}
+.nav-item:hover{
+    background-color: #181947;
+    border-radius: 10px;
+
+}
+
+.navbar-toggler .navbar-toggler-icon  {
+    background-color: #DAA520 !important;
+    border: none !important;
+
+  
+}
+
+.navbar-toggler {
+    color: #fff !important;
+    border: none !important;
+}
+
+
+
+
+
+
+
+a{
+    list-style: none;
+    text-decoration: none;
+
+}
+#logo{
+    width: 80px;
+    height: 80px;
+   
+   
+    background-color: #4F6EEB;
+    border-radius: 50%;
+}
+
+
+h1{
+
+    color: goldenrod;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.box{
+
+    margin: 95px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    background-color: #a84d4d;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.38);
+
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: red;
+
+   
+    
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    margin: 20px;
+}
+
+
+
+
+.item p{
+  
+    margin-bottom: 5px;
+    margin-left: 60px;
+    border-bottom: 2px solid goldenrod;
+    padding: 10px;
+    color: honeydew;
+    overflow-wrap: break-word;
+   
+}
+ .item:last-child{
+    border-bottom:0;
+}
+
+
+
+.box .form-input{
+   display:flex;
+    margin: 20px 20px;
+    width: 80%;
+    margin-left: 70px;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+::placeholder{
+    color: grey;
+    opacity: 1;
+}
+
+.form-input:hover{
+   content: '';
+   border-bottom: 3px solid red;
+   border: none;
+ }
+
+.box input:focus{
+    content: '';
+    border-bottom: 5px solid #4f6eeb;
+    
+    padding: 20px 10px;
+
+  
+}
+
+.btn{
+    background-color:red;
+    width: 100%;
+    color:#fff;
+   transition: all .3s ease-in-out;
+}
+ 
+.btn:hover{
+    background-color: goldenrod;
+    color: indigo;
+   font-size: 50px;
+}
+
+button span:hover{
+  
+}
+
+.footer-box{
+    background-color: #4F6EEB;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ footer p{
+ 
+   text-align: center;
+    color: honeydew;
+    padding: 10px;
+   
+} 
+
+
+.friendsimg{
+
+    display: flex;
+    flex-direction: column;
+    margin:-250px 10px;
+    padding: 0;
+    max-width: 200px;
+  position: absolute;
+  
+}
+
+.friendsimg img{
+    display: flexbox;
+    margin: 10px;
+    flex-direction: column;
+    max-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+  @media only screen and (max-width: 1050px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left: 300px;
+         max-width: 1000px;
+        flex-direction: row;
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+  @media only screen and (max-width: 920px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left: 200px;
+         max-width: 1000px;
+        flex-direction: row;
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 735px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left: 120px;
+         max-width: 1000px;
+        flex-direction: row;
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 735px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left: 100px;
+         max-width: 1000px;
+        flex-direction: row;
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+  
+    .friendsimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+         align-items: center;
+         margin-left: 50px;
+         max-width: 1000px;
+      
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+  
+    .friendsimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+         align-items: center;
+         margin-left: 10px;
+         max-width: 1000px;
+      
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 329px) {
+  
+    .friendsimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-left: 6px;
+         align-items: center;
+          max-width: 1000px;
+      
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+  }
+
+
+
+
+ 
